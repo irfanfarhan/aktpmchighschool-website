@@ -8,6 +8,7 @@ import { LoadingService } from './services/loading.service';
 import { LoginRedirectComponent } from './components/login-redirect/login-redirect.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LibraryModule } from '../lib/lib.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { LibraryModule } from '../lib/lib.module';
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
-    LibraryModule
+    LibraryModule,
+    CarouselModule
   ],
   declarations: [LoginRedirectComponent, LoaderComponent],
   exports: [
@@ -28,7 +30,8 @@ import { LibraryModule } from '../lib/lib.module';
     HttpClientModule,
     RouterModule,
     LoginRedirectComponent,
-    LoaderComponent
+    LoaderComponent,
+    CarouselModule
   ],
   providers: [LoadingService]
 })

@@ -6,6 +6,7 @@ import { LoadingService } from '../shared/services/loading.service';
 import { AktpmchSchoolRoutingModule } from './aktpmch-school-routing.module';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   declarations: [
     NavigationComponent,
     DashboardComponent,
+    AboutUsComponent,
   ],
   entryComponents: [],
   providers: [LoadingService]

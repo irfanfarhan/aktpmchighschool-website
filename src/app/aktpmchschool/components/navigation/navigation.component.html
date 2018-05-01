@@ -20,17 +20,11 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="#"> HOME</a>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a [routerLink]="['/home']" [queryParams]="{ order: 'popular', id: id}"> Home</a>
                 </li>
                 <li>
-                    <a href="#"> HOME</a>
-                </li>
-                <li>
-                    <a href="#"> HOME</a>
-                </li>
-                <li>
-                    <a href="#"> HOME</a>
+                    <a routerLink="/about-us/{{id}}"> About US</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

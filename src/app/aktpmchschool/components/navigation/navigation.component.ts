@@ -8,8 +8,9 @@ import { Router, ActivatedRoute } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent implements OnInit {
-  constructor(private router: Router, private route: ActivatedRoute) {}
-
+  constructor(private router: Router, private route: ActivatedRoute) { }
+  id: string;
   ngOnInit() {
+    this.id = 'abc';
   }
 }
